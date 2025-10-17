@@ -1,18 +1,19 @@
 ﻿namespace GeneradorVolumetria.GeneradoresProcesos
 {
+    // Generador de datos para el proceso de gestión de fraudes.
+    // Simula la generación de registros de equipos marcados como fraudulentos en el sistema.
+
     internal class GestionDeFraudes : IGenerador
     {
-        public int Columns => 3;
+        public int Columnas => 3;
 
         public string GenerarLinea(Random? random)
         {
-            var customerIntegrationId = (long)(random!.NextDouble() * 999999999999999999);
-            var reason = "FRAUDE";
-
-            return $"{customerIntegrationId:D18}|{reason}";
+            var razon = "FRAUDE";
+            return $"{razon}";
         }
 
-        public string GetIdentifier(Random? random)
+        public string ObtenerId(Random? random)
         {
             var assetId = (long)(random!.NextDouble() * 999999999999999999);
             return $"{assetId:D18}";

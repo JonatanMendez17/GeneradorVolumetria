@@ -1,13 +1,16 @@
 ﻿namespace GeneradorVolumetria.GeneradoresProcesos
 {
+    // Generador de datos para el proceso de gestión de servicios de equipos.
+    // Simula la generación de acciones de suspensión/recuperación con tipos técnicos y comerciales,
+
     internal class GestionDeServicios : IGenerador
     {
-        private bool _isIMEI = false;
-        public int Columns => 6;
+        public int Columnas => 6;
+
+        private readonly bool _isIMEI = false;
+
         public string GenerarLinea(Random? random)
         {
-            _isIMEI = random.Next(2) == 1;
-
             string[] accion = { "SUS", "REC" };
             string[] tipo = { "COMERCIAL", "TÉCNICO" };
             string[] subtipoTecnico = { "Spam", "Bypass", "Hackeo", "IRSF" };
@@ -35,12 +38,12 @@
             return $"{accionElegida}|{tipoElegido}|{subtipoElegido}|{comentario}";
         }
 
-        public string GetIdentifier(Random? random)
+        public string ObtenerId(Random? random)
         {
             var nroIMEI = (long)(random.NextDouble() * 999999999999999);
-            var nroLinea = (long)random.NextInt64(100000000, 999999999);
+            var assetId = (long)random.NextInt64(100000000, 999999999);
 
-            return _isIMEI ? $"|{nroIMEI:D15}" : $"{nroLinea:D10}|";
+            return _isIMEI ? $"|{nroIMEI:D15}" : $"{assetId:D10}|";
         }
     }
 }

@@ -1,24 +1,26 @@
 ﻿namespace GeneradorVolumetria.GeneradoresProcesos
 {
+    // Generador de datos para el proceso de gestión de planes de suscripción.
+    // Simula la generación de lotes de procesamiento con identificadores de paquetes, suscripciones y órdenes de tarea.
+
     internal class GestionDePlanes : IGenerador
     {
-        public int Columns => 6;
+        public int Columnas => 6;
 
         public string GenerarLinea(Random? random)
         {
-            var CustomerId = (long)(random.NextDouble() * 99999999999);
-            var BatchId = "CBSDC_CRM_DEG_20250311_602.TXT";
-            var BundleId = Guid.NewGuid;
-            var SusbscriptionId = Guid.NewGuid;
-            var TaskOrderId = "100000000250440155_55053381_2002334408_0";
+            var idLote = "CBSDC_CRM_DEG_20250311_602.TXT";
+            var idPaquete = Guid.NewGuid;
+            var idSuscripcion = Guid.NewGuid;
+            var idOrdenTarea = "100000000250440155_55053381_2002334408_0";
 
-            return $"{CustomerId}|{BatchId}|{BundleId}|{SusbscriptionId}|{TaskOrderId}";
+            return $"{idLote}|{idPaquete}|{idSuscripcion}|{idOrdenTarea}";
         }
 
-        public string GetIdentifier(Random? random)
+        public string ObtenerId(Random? random)
         {
-            var AccountId = (long)(random!.NextDouble() * 9999999999999999);
-            return $"{AccountId:D16}";
+            var assetId = (long)(random!.NextDouble() * 9999999999999999);
+            return $"{assetId:D16}";
         }
     }
 }

@@ -1,8 +1,11 @@
 ﻿namespace GeneradorVolumetria.GeneradoresProcesos
 {
+    // Generador de datos para el proceso de gestión de devoluciones de equipos.
+    // Simula la generación de listas de números de serie de equipos devueltos por clientes.
+
     internal class GestionDeDevoluciones : IGenerador
     {
-        public int Columns => 6;
+        public int Columnas => 6;
         
         public string GenerarLinea(Random? random)
         {
@@ -17,10 +20,10 @@
             return $"{string.Join(";", seriales)}";
         }
 
-        public string GetIdentifier(Random? random)
+        public string ObtenerId(Random? random)
         {
-            var NroCuenta = (long)(random!.NextDouble() * 9999999999999999);
-            return $"{NroCuenta:D16}";
+            var assetId = (long)(random!.NextDouble() * 9999999999999999);
+            return $"{assetId:D16}";
         }
     }
 }

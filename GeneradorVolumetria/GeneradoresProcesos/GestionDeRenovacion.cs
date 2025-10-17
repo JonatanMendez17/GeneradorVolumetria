@@ -1,19 +1,24 @@
 ﻿namespace GeneradorVolumetria.GeneradoresProcesos
 {
+    // Generador de datos para el proceso de gestión de renovaciones de equipos.
+    // Simula la generación de códigos de promoción y comentarios para procesos de renovación.
+
     internal class GestionDeRenovacion : IGenerador
     {
-        public int Columns => 2;
+
+        public int Columnas => 2;
 
         public string GenerarLinea(Random? random)
         {
             var promocion = (long)(random!.NextDouble() * 9999);
-            return $"Fide_{promocion:D4}";//promotion
+            var comentario = "Comentario de prueba";
+            return $"Renovacion_{promocion:D4}|{comentario}";
         }
 
-        public string GetIdentifier(Random? random)
+        public string ObtenerId(Random? random)
         {
-            var primerItem = (long)(random!.NextDouble() * 999999999999999999);
-            return $"{primerItem:D18}";
+            var assetId = (long)(random!.NextDouble() * 999999999999999999);
+            return $"{assetId:D18}";
         }
     }
 }
