@@ -1,6 +1,6 @@
 ﻿namespace GeneradorVolumetria.GeneradoresProcesos
 {
-    internal class GeneradorSuspYRehab : IGenerador
+    internal class GestionDeServicios : IGenerador
     {
         private bool _isIMEI = false;
         public int Columns => 6;

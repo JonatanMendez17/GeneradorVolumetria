@@ -5,7 +5,7 @@ namespace GeneradorVolumetria
     internal class Program
     {
         const int _cntRegistros = 10;                             // Se puede modificar la cantidad de registros a generar
-        const TipoProceso _tipoProceso = TipoProceso.BajaFraude;    // Se puede modificar el tipo de proceso a generar
+        const TipoProceso _tipoProceso = TipoProceso.GestionDeFraudes;    // Se puede modificar el tipo de proceso a generar
         const string _directorio = "C:\\Users\\jonat\\Desktop\\test";        // Se puede modificar la ubicación de guardado del archivo
 
         static void Main()
@@ -37,12 +37,12 @@ namespace GeneradorVolumetria
         {
             return tipoProceso switch
             {
-                TipoProceso.Fidelizacion => new GeneradorFide(),
-                TipoProceso.SuspYReconexion => new GeneradorSuspYRehab(),
-                TipoProceso.BajaFraude => new GeneradorBajaFraude(),
-                TipoProceso.Cancelador => new GeneradorCancelador(),
-                TipoProceso.RecuperoEquipo => new GeneradorRecuperoEquipo(),
-                TipoProceso.Degradacion => new GeneradorDegradacion(),
+                TipoProceso.GestionDeBajas => new GestionDeBajas(),
+                TipoProceso.GestionDeDevoluciones => new GestionDeDevoluciones(),
+                TipoProceso.GestionDeFraudes => new GestionDeFraudes(),
+                TipoProceso.GestionDePlanes => new GestionDePlanes(),
+                TipoProceso.GestionDeRenovacion => new GestionDeRenovacion(),
+                TipoProceso.GestionDeServicios => new GestionDeServicios(),
                 _ => throw new NotImplementedException(),
             };
         }
@@ -59,11 +59,11 @@ namespace GeneradorVolumetria
 
     internal enum TipoProceso
     {
-        BajaFraude,
-        Cancelador,
-        Degradacion, 
-        Fidelizacion,
-        RecuperoEquipo,
-        SuspYReconexion,
+        GestionDeBajas,
+        GestionDeDevoluciones,
+        GestionDeFraudes,
+        GestionDePlanes,
+        GestionDeRenovacion,
+        GestionDeServicios,
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace GeneradorVolumetria.GeneradoresProcesos
 {
-    internal class GeneradorDegradacion : IGenerador
+    internal class GestionDePlanes : IGenerador
     {
         public int Columns => 6;
 
