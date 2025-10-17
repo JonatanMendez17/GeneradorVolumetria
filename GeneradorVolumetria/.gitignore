@@ -1,0 +1,15 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/FileGenerator
+/bin/Debug/net8.0
+/obj
+/.vs/TecoTools/DesignTimeBuild
+/.vs/TecoTools/FileContentIndex
+/.vs/TecoTools/v16
+/.vs/TecoTools/v17
+/.vs/ProjectEvaluation
+/.vs/TecoTools
+/BulkActivitiesGenerator/bin/Debug/net8.0
+/BulkActivitiesGenerator/obj
