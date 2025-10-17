@@ -56,6 +56,7 @@ namespace GeneradorVolumetria
     }
 
 
+
     internal enum TipoProceso
     {
         BajaFraude,
