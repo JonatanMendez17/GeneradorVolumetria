@@ -55,6 +55,7 @@ namespace GeneradorVolumetria
         int Columns { get; }
     }
 
+
     internal enum TipoProceso
     {
         BajaFraude,
