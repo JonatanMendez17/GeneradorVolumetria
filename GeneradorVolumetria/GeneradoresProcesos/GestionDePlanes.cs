@@ -1,4 +1,6 @@
-﻿namespace GeneradorVolumetria.GeneradoresProcesos
+﻿using GeneradorVolumetria.Modelos;
+
+namespace GeneradorVolumetria.GeneradoresProcesos
 {
     // Generador de datos para el proceso de gestión de planes de suscripción.
     // Simula la generación de lotes de procesamiento con identificadores de paquetes, suscripciones y órdenes de tarea.

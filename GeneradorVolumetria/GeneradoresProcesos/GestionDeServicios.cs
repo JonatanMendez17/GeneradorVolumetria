@@ -1,4 +1,6 @@
-﻿namespace GeneradorVolumetria.GeneradoresProcesos
+﻿using GeneradorVolumetria.Modelos;
+
+namespace GeneradorVolumetria.GeneradoresProcesos
 {
     // Generador de datos para el proceso de gestión de servicios de equipos.
     // Simula la generación de acciones de suspensión/recuperación con tipos técnicos y comerciales,

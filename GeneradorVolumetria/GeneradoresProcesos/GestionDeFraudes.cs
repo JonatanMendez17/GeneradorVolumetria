@@ -1,4 +1,6 @@
-﻿namespace GeneradorVolumetria.GeneradoresProcesos
+﻿using GeneradorVolumetria.Modelos;
+
+namespace GeneradorVolumetria.GeneradoresProcesos
 {
     // Generador de datos para el proceso de gestión de fraudes.
     // Simula la generación de registros de equipos marcados como fraudulentos en el sistema.

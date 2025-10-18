@@ -1,4 +1,6 @@
-﻿namespace GeneradorVolumetria.GeneradoresProcesos
+﻿using GeneradorVolumetria.Modelos;
+
+namespace GeneradorVolumetria.GeneradoresProcesos
 {
     // Generador de datos para el proceso de gestión de devoluciones de equipos.
     // Simula la generación de listas de números de serie de equipos devueltos por clientes.

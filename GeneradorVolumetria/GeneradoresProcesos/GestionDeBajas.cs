@@ -1,4 +1,6 @@
-﻿namespace GeneradorVolumetria.GeneradoresProcesos
+﻿using GeneradorVolumetria.Modelos;
+
+namespace GeneradorVolumetria.GeneradoresProcesos
 {
     // Generador de datos para el proceso de gestión de bajas de equipos.
     // Simula la generación equipos de clientes dados de baja del sistema.
