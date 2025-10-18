@@ -1,58 +1,74 @@
-# 📂 MassiveFileGenerator
+# 🚀 Generador de Volumetría
 
-> 🧪 Herramienta para generar archivos de texto con datos simulados, útil para pruebas de volumetría, performance y validaciones de sistemas que procesan grandes cantidades de registros.
-
----
-
-## 🚀 ¿Qué es?
-
-**MassiveFileGenerator** es una herramienta que permite generar archivos `.txt` con líneas simuladas de datos, personalizados según diferentes tipos de procesos.  
-Fue desarrollada inicialmente como una utilidad interna para facilitar pruebas en sistemas de back-office y se fue extendiendo con la colaboración de otros desarrolladores del equipo.
+> ⚡ Herramienta para generar archivos de texto con datos simulados, útil para pruebas de volumetría, rendimiento y validación de sistemas que procesan grandes cantidades de registros.
 
 ---
 
-## 🧠 ¿Cómo surgió?
+## 📖 ¿Qué es?
 
-💡 El proyecto comenzó como una idea personal para automatizar tareas repetitivas en mi entorno laboral.  
-🔧 A medida que fue demostrando utilidad, otros compañeros del equipo sumaron mejoras y casos de uso adicionales.  
-📦 Esta versión pública es una réplica genérica, sin detalles ni datos sensibles del negocio original.
+**Generador de Volumetría** es una herramienta especializada que permite crear archivos `.txt` con líneas simuladas de datos, personalizables según distintos tipos de procesos.
+
+Desarrollada inicialmente como una utilidad interna para facilitar pruebas en sistemas de back-office, evolucionó hacia una solución sólida y escalable, con una arquitectura basada en buenas prácticas de desarrollo.
+
+---
+
+## 🏗️ ¿Cómo surgió?
+
+💡 El proyecto nació como una idea personal para automatizar tareas repetitivas en mi entorno laboral.  
+🔄 Con el tiempo, al demostrar su utilidad, fue mejorado y adaptado para nuevos procesos y escenarios de prueba.
 
 ---
 
 ## ⚙️ ¿Qué hace?
 
-Genera dos archivos de texto:
+Genera archivos de texto con datos simulados de manera masiva. Es ideal para:
 
-- `Volumetria.txt`: archivo con registros únicos.
-- `VolumetriaConDuplicados.txt`: archivo con una mezcla de identificadores únicos y duplicados.
+- 🧪 Pruebas de carga y rendimiento  
+- 🧰 Validación de sistemas batch  
+- 🧍 Simulación de escenarios reales  
+- 🧩 Testing de aplicaciones con grandes volúmenes  
 
-Cada línea está construida según el tipo de proceso elegido (conciliación, modificación de datos, suspensión de servicio, etc.), definidos mediante una enumeración interna.
-
----
-
-## 🧩 Tecnologías utilizadas
-
-🔹 **Lenguaje:** C#  
-🔹 **Framework:** .NET (console application)  
-🔹 **Organización del código:**
-- Uso de interfaces (`IGenerador`) para abstraer la lógica de generación de datos.
-- Implementación de múltiples generadores concretos según tipo de proceso.
-- Uso de `Random` para simular datos dinámicos.
-- Escritura directa de archivos en disco con `File.WriteAllLines`.
+📊 *Por ejemplo:* puede generar un archivo de **10.000.000 registros en pocos segundos**.
 
 ---
 
+## 🎯 Características Principales
+
+- 🔹 **Múltiples tipos de proceso:** Soporte para distintos formatos de datos  
+- 🔹 **Arquitectura modular:** Basada en interfaces, fácil de extender  
+- 🔹 **Generación masiva eficiente:** Optimizado para grandes volúmenes  
+- 🔹 **Configuración flexible:** Personalización de formatos y estructuras  
+- 🔹 **Manejo robusto de errores:** Sistema de gestión completo  
+- 🔹 **Interfaz de consola interactiva:** Fácil de usar para cualquier usuario  
+
 ---
 
-## 🔒 Aviso legal
+## 🛠️ Tecnologías Utilizadas
 
-Este repositorio tiene como único fin compartir una experiencia técnica personal con fines demostrativos.
+| Tecnología | Descripción |
+|-------------|--------------|
+| **Lenguaje** | C# |
+| **Framework** | .NET 6.0+ |
+| **Patrones de diseño** | Interfaces, Factory, Principios SOLID |
 
-- El código aquí publicado es una **versión adaptada**, genérica y sin vínculos directos con procesos o datos reales de ninguna empresa.
-- **Se prohíbe la distribución o uso comercial** sin autorización expresa del autor.
+---
 
-🛡️ Todos los derechos reservados © [Jonatan Ezequiel Mendez]
-
+## 🚀 Cómo Usar la Aplicación
 
 
+1. **Descargar la aplicación** (archivo ejecutable).
+2. **Abrir la consola (CMD)** y navegar a la carpeta del proyecto:
+   ```cmd
+   cd C:\Users\jonat\Desktop\GeneradorVolumetria\GeneradorVolumetria\bin\Debug\net8.0
+3. **Ejecutar la aplicación**
+	Los archivos generados se guardarán automáticamente en tu escritorio.
+	
+⚠️ Aviso Legal
 
+Este repositorio tiene como único fin compartir experiencia técnica y servir como ejemplo educativo.
+El código publicado es una versión genérica y adaptada.
+
+❌ Prohibida su distribución o uso comercial.
+📚 Compartido únicamente con fines educativos.
+
+👨‍💻 Autor: [Tu nombre aquí]
