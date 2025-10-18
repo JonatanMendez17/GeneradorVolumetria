@@ -47,6 +47,9 @@ Genera archivos de texto con datos simulados de manera masiva. Es ideal para:
    \GeneradorVolumetria\bin\Debug\net8.0
 3. **Ejecutar la aplicación**
 	Los archivos generados se guardarán automáticamente en una nueva carpeta en el escritorio.
+
+<img width="593" height="333" alt="image" src="https://github.com/user-attachments/assets/f32f378e-262e-4c91-9bfa-3129018effd4" />
+
 	
 ⚠️ Aviso Legal
 
@@ -56,6 +59,7 @@ El código publicado es una versión genérica y adaptada.
 ❌ Prohibida su distribución o uso comercial.
 
 👨‍💻 Autor: [Mendez, Jonatan Ezequiel]
+
 
 
 
