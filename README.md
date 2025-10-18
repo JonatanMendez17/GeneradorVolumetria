@@ -1,6 +1,6 @@
 # 🚀 Generador de Volumetría
 
-> ⚡ Herramienta para generar archivos de texto con datos simulados, útil para pruebas de volumetría, rendimiento y validación de sistemas que procesan grandes cantidades de registros.
+⚡ Herramienta para generar archivos de texto con datos simulados, útil para pruebas de volumetría, rendimiento y validación de sistemas que procesan grandes cantidades de registros.
 
 ---
 
@@ -70,5 +70,6 @@ El código publicado es una versión genérica y adaptada.
 
 ❌ Prohibida su distribución o uso comercial.
 📚 Compartido únicamente con fines educativos.
+
 
 👨‍💻 Autor: [Tu nombre aquí]
