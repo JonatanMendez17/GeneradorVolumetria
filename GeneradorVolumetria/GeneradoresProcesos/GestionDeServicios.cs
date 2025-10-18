@@ -19,7 +19,7 @@ namespace GeneradorVolumetria.GeneradoresProcesos
             string[] subtipoComercial = { "Administrativo por suscripción", "Investigación", "Desconocimiento", "Irregular" };
             var comentario = "Comentario de prueba";
 
-            var accionElegida = accion[random.Next(accion.Length)];
+            var accionElegida = accion[random!.Next(accion.Length)];
 
             var tipoElegido = "";
             if (accionElegida == "SUS")
@@ -42,8 +42,8 @@ namespace GeneradorVolumetria.GeneradoresProcesos
 
         public string ObtenerId(Random? random)
         {
-            var nroIMEI = (long)(random.NextDouble() * 999999999999999);
-            var assetId = (long)random.NextInt64(100000000, 999999999);
+            var nroIMEI = (long)(random!.NextDouble() * 999999999999999);
+            var assetId = random.NextInt64(100000000, 999999999);
 
             return _isIMEI ? $"|{nroIMEI:D15}" : $"{assetId:D10}|";
         }
