@@ -2,7 +2,6 @@
 
 ⚡ Herramienta para generar archivos de texto con datos simulados, útil para pruebas de volumetría, rendimiento y validación de sistemas que procesan grandes cantidades de registros.
 
----
 
 ## 📖 ¿Qué es?
 
@@ -10,14 +9,14 @@
 
 Desarrollada inicialmente como una utilidad interna para facilitar pruebas en sistemas de back-office, evolucionó hacia una solución sólida y escalable, con una arquitectura basada en buenas prácticas de desarrollo.
 
----
+
 
 ## 🏗️ ¿Cómo surgió?
 
 💡 El proyecto nació como una idea personal para automatizar tareas repetitivas en mi entorno laboral.  
 🔄 Con el tiempo, al demostrar su utilidad, fue mejorado y adaptado para nuevos procesos y escenarios de prueba.
 
----
+
 
 ## ⚙️ ¿Qué hace?
 
@@ -30,7 +29,7 @@ Genera archivos de texto con datos simulados de manera masiva. Es ideal para:
 
 📊 *Por ejemplo:* puede generar un archivo de **10.000.000 registros en pocos segundos**.
 
----
+
 
 ## 🎯 Características Principales
 
@@ -41,7 +40,8 @@ Genera archivos de texto con datos simulados de manera masiva. Es ideal para:
 - 🔹 **Manejo robusto de errores:** Sistema de gestión completo  
 - 🔹 **Interfaz de consola interactiva:** Fácil de usar para cualquier usuario  
 
----
+
+
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -51,10 +51,10 @@ Genera archivos de texto con datos simulados de manera masiva. Es ideal para:
 | **Framework** | .NET 6.0+ |
 | **Patrones de diseño** | Interfaces, Factory, Principios SOLID |
 
----
+
+
 
 ## 🚀 Cómo Usar la Aplicación
-
 
 1. **Descargar la aplicación** (archivo ejecutable).
 2. **Abrir la consola (CMD)** y navegar a la carpeta del proyecto:
@@ -73,3 +73,4 @@ El código publicado es una versión genérica y adaptada.
 
 
 👨‍💻 Autor: [Tu nombre aquí]
+
