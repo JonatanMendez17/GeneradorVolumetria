@@ -1,13 +1,10 @@
 # 🚀 Generador de Volumetría
 
-⚡ Herramienta para generar archivos de texto con datos simulados, útil para pruebas de volumetría, rendimiento y validación de sistemas que procesan grandes cantidades de registros.
+⚡ Herramienta especializada para crear archivos de texto (.txt) con datos simulados, útil en pruebas de volumetría, rendimiento y validación de sistemas que procesan grandes volúmenes de información.
 
 
-## 📖 ¿Qué es?
-
-**Generador de Volumetría** es una herramienta especializada que permite crear archivos `.txt` con líneas simuladas de datos, personalizables según distintos tipos de procesos.
-
-Desarrollada inicialmente como una utilidad interna para facilitar pruebas en sistemas de back-office, evolucionó hacia una solución sólida y escalable, con una arquitectura basada en buenas prácticas de desarrollo.
+El Generador de Volumetría permite personalizar líneas de datos simulados según distintos tipos de procesos, adaptándose a las necesidades de cada entorno de prueba.
+Desarrollada inicialmente como una utilidad interna para pruebas en sistemas de back-office, esta herramienta ha evolucionado hacia una solución sólida y escalable, construida sobre una arquitectura robusta y basada en buenas prácticas de desarrollo.
 
 
 
@@ -73,4 +70,5 @@ El código publicado es una versión genérica y adaptada.
 
 
 👨‍💻 Autor: [Tu nombre aquí]
+
 
